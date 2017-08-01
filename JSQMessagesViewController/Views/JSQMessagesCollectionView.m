@@ -48,7 +48,7 @@
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
 
     self.backgroundColor = [UIColor whiteColor];
-    self.keyboardDismissMode = UIScrollViewKeyboardDismissModeNone;
+    self.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
     self.alwaysBounceVertical = YES;
     self.bounces = YES;
     
@@ -180,6 +180,13 @@
                     performAction:action
                forItemAtIndexPath:indexPath
                        withSender:sender];
+}
+
+#pragma mark - keyboard handling
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
 }
 
 @end

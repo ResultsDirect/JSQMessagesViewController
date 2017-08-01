@@ -88,11 +88,6 @@
 @property (assign, nonatomic) CGFloat preferredDefaultHeight;
 
 /**
- *  Specifies the maximum height for the toolbar. The default value is `NSNotFound`, which specifies no maximum height.
- */
-@property (assign, nonatomic) NSUInteger maximumHeight;
-
-/**
  *  Enables or disables the send button based on whether or not its `textView` has text.
  *  That is, the send button will be enabled if there is text in the `textView`, and disabled otherwise.
  */
